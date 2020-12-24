@@ -1,24 +1,12 @@
-#include <QTextStream>
-
-#include "widget.h"
 #include <QApplication>
-#include <field.h>
-#include <QPaintDevice>
-
-
+#include "Sapper.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    Widget w;
-    w.show();
+    QApplication app(argc, argv);
 
+    Sapper sapper;
+    sapper.show();
 
-
-    Field f(7,7);
-    f.Field_generation(10);
-    f.Print_field();
-
-   // system("pause>>NULL");
-    return a.exec();
+    return app.exec();
 }
